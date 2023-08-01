@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<header>
+    <div><p>Dashboard</p></div>
+</header>
+<body>
+<div class="content">
+   <div class="dashboard">
+    <div class="logo">Portfolio Tracker</div>
+    <ul>
+        <li> <img src="pie-chart.png" alt="" style="width: 20px; height: 20px;"><a href="#"><p>Dashboard</p></a></li>
+        <li> <img src="adder.png" alt="" style="width: 20px; height: 20px;"><button class="open-modal-button" onclick="openModal()">Add Today's Balance</button></li>
+        </ul>
+
+   </div>
+   <div class="main">
+    <div class="mainchart">
+            <button onclick="deleteLastDay()" class="deleter">-</button>
+        <canvas id="lineChart" style="margin-bottom: 30px;"></canvas>
+    </div>
+    <div class="charts">
+        <div class="chart-box">
+            <p>Trades Per Day</p>
+            <canvas id="bar-chart" width="400" height="300" class="bar-chart"></canvas>
+                <div class="adders">
+            <button id="button1" class="adder">+</button>
+            <button id="button2" class="adder">+</button>
+            <button id="button3" class="adder">+</button>
+            <button id="button4" class="adder">+</button>
+            <button id="button5" class="adder">+</button>
+                </div>
+                <div class="adders">
+            <button id="removeButton1" class="adder">-</button>
+            <button id="removeButton2" class="adder">-</button>
+            <button id="removeButton3" class="adder">-</button>
+            <button id="removeButton4" class="adder">-</button>
+            <button id="removeButton5" class="adder">-</button>
+                </div>
+            
+        </div>
+        <div class="chart-box"> 
+            <div style="display: flex;">
+            <p style="margin-left: 175px;">Average Profit Per Trade</p><button onclick="deleteLast()" class="remover">-</button>
+        </div>
+            <div class="wrapper">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="label">
+            <input type="text" id="weightInput" placeholder="Enter Profit">
+            <button onclick="addWeightValue()" class="btn">Submit</button>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div style="display: flex;">
+                <p style="margin-left: 175px;">Average Loss Per Trade</p><button onclick="deleteLastValue()" class="remover">-</button>
+            </div>
+              <div class="wrapper">
+                <canvas id="lossesChart"></canvas>
+              </div>
+              <div class="label">
+                <label for="lossesInput" class="lossesInput"></label>
+                <input type="text" id="lossesInput" placeholder="Enter Loss"/>
+                <button id="submitBtn" class="btn">Submit</button>
+              </div>
+              </div>
+        </div>
+        
+   </div>
+</div>
+
+  
+
+    <!-- Modal for Data Input -->
+  <div class="modal-background" id="modalBackground">
+    <!-- Modal content will be dynamically created here -->
+  </div>
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+  <script src="script4.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+body {
+    background-color: #1e1e2f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid #1d8cf8;
+    font-family: poppins,sans-serif;
+    font-weight: 400;
+    height: 100%;
+    color: #ffffff;
+}
+* {
+    color: white;
+    text-decoration: none;
+}
+header {
+    display: block;
+}
+
+header p {
+    padding: 25px;
+    color: #fff;
+    margin-left: 17px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+.content {
+    display: flex;
+    justify-content: center;
+
+}
+.chart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+.menu {
+    width: 400px;
+    height: 700px;
+    margin: 20px auto;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#portfolio-chart {
+    width: 100%;
+}
+.dashboard {
+    background: #3358f4;
+    background: linear-gradient(0deg,#3358f4,#1d8cf8);
+    width: 300px;
+    margin-left: 25px;
+    border-radius: 10px;
+    height: 820px;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.logo {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    border-bottom: solid 1px #8FC4FC;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+  }
+li {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: .875rem;
+}
+li img {
+    margin-right: 20px;
+}
+.main {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.mainchart {
+    width: 100%;
+    height: 357.5px;
+    background-color: #27293d;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+.chart-box {
+    width: 33%;
+    height: 440px;
+    background-color: #27293d;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.chart-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #lineChart {
+    width: 100%;
+  }
+  /* ... (same as previous code) */
+
+/* Modal styles */
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #27293d;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  .modal-content input {
+    background-color: transparent;
+    border: solid 2px #ffffff;
+    height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    width: 290px;
+  }
+  .modal-content button {
+    color: white;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    transition: 0.5s;
+    
+  }
+  .modal-content button:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+  
+  .modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+
+  
+  .open-modal-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: .875rem;
+  }
+  
+  /* ... (additional styles) */
+.deleter {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    margin-left: 96%;
+    transition: 0.5s;
+    cursor: pointer;
+}  
+.deleter:hover {
+    transform: scaleX(1.5);
+}
+
+i {
+    width: 16px;
+    height: 16px;
+    display: block;
+    color: white;
+}
+.bar-chart {
+	display: block;
+    width: 500px;
+	max-width: 500px;
+    max-height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.adder {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    flex: 0 0 92.5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.adder:hover {
+    transform: scale(1.5);
+}
+.adders {
+    margin-left: 40px;
+    display: flex;
+}
+.wrapper {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #canvas {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #506678;
+    border-bottom: 1px solid rgba(80, 102, 120, 0.25);
+    transition: all 0.35s;
+  
+  }
+
+  .remover {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 120px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+.remover:hover {
+    transform: scaleX(1.5);
+}
+#addWeightButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.chart-box input {
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+input::placeholder {
+    text-transform: uppercase;
+    padding: 0.5rem 0px;
+    text-align: center;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+}
+.chart-box .btn {
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    line-height: 30px;
+    border-left: 0px;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.label {
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+}
